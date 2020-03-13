@@ -23,7 +23,11 @@ module.exports = {
     'react',
   ],
   rules: {
-		"no-restricted-imports": off,
-
+		'no-restricted-imports': 'off',
+		'no-tabs': 'off',
+		'no-mixed-spaces-and-tabs': 'off',
+		'no-warning-comments': 'off',
+		'spaced-comment': 'off',
+		'indent': 'off',
   },
 };
