@@ -1,0 +1,1 @@
+Creating a widget to display merchandise.
