@@ -1,9 +1,25 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+// const someData = require('seedData')
 
-app.use(express.static('./client/dist'))
+const app = express();
+const port = 3000;
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.use(express.static('./client/dist'));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.get('/getStarted', (req, res) => {
+	/* ask for data from database
+	data.getFiles((err, data) {
+		//data is top ten users
+		if (er) {
+			console.log('got error from server)
+		} else {
+			res.send(data)
+		}
+	} )
+	*/
+});
+
+// app.get('/getUser', (req, res) => {
+// )
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
