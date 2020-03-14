@@ -13,11 +13,11 @@ db.once('open', () => {
 });
 
 const widgetSchema = new mongoose.Schema({
-  streamerID: String,
+  streamerID: Number,
   streamerName: String,
-  price: Number,
-  itemNames: Array,
   designerName: String,
+  itemNames: Array,
+  price: Number,
   imgs: Array,
 });
 
