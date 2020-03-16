@@ -27,7 +27,6 @@ class App extends React.Component {
 		.then((data) => {this.setState({
 			merchandise: data,
 		})
-		console.log('hey')
 		console.log(this.state.merchandise)
 	})	
 	}

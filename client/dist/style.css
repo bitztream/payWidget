@@ -1,0 +1,29 @@
+.container {
+	 display: flex-box;
+	 height: 500px;
+		width: 500px;
+		border: black 2px solid;
+		padding: 10px;
+}
+
+.designer {
+		display: flex;
+		justify-content: flex-end;
+}
+
+.itemPic {
+	display: flex;
+	
+	height: 400px;
+	width: 300px;
+	border: blue solid 1px;
+	align-items: flex-end;
+	justify-content: center;
+	color: green;
+}
+
+.itemName {
+	display: flex;
+	justify-content: center;
+
+}
