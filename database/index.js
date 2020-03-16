@@ -16,7 +16,7 @@ db.once('open', () => {
 const widgetSchema = new mongoose.Schema({
 	streamerName: String,
 	designerName: String,
-	items: Array,
+	itemNames: Array,
 	prices: Array,
 	imgs: Array,
 });

@@ -2,6 +2,21 @@
 // const seed = require('./seed.js');
 // let Data = seed.goSeed();
 // Data.forEach((datum) => db.save(datum));
-let item = { "items" : [ "Ergonomic Plastic Soap", "Sleek Rubber Keyboard", "Licensed Rubber Shirt", "Tasty Granite Soap", "Intelligent Metal Gloves", "Licensed Plastic Shoes" ], "prices" : [ 145, 57, 89, 66, 75, 182 ], "imgs" : [ "Ergonomic Concrete Fish", "Rustic Rubber Salad", "Sleek Metal Hat", "Rustic Wooden Cheese", "Unbranded Fresh Chicken", "Unbranded Wooden Fish" ], "streamerName" : "Zora9", "designerName" : "Predovic Merch store program", "__v" : 0 }
-
+let item = { itemNames: 
+	[ 'Ergonomic Rubber Bacon',
+		'Rustic Granite Cheese',
+		'Awesome Rubber Shoes',
+		'Practical Granite Car',
+		'Handmade Cotton Soap',
+		'Rustic Frozen Computer' ],
+ prices: [ 194, 108, 172, 117, 66, 172 ],
+ imgs: 
+	[ 'Small Wooden Hat',
+		'Rustic Frozen Mouse',
+		'Sleek Plastic Table',
+		'Gorgeous Metal Salad',
+		'Licensed Wooden Table',
+		'Ergonomic Steel Sausages' ],
+ streamerName: 'Judy4',
+ designerName: 'Spencer Merch store panel'}
 module.exports.item = item;

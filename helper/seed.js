@@ -43,12 +43,12 @@ const goSeed = () => {
 	while (dataLength > 0) {
 		let streamerName = faker.internet.userName();
 		let designerName = faker.name.lastName() + ' Merch store ' + faker.hacker.noun()
-		let items = Items();
+		let itemNames = Items();
 		let prices = Prices();
 		let imgs = Imgs();
 
 		seedData.push({
-			streamerName, designerName, items, prices, imgs,
+			streamerName, designerName, itemNames, prices, imgs,
 		});
 		dataLength--;
 	}

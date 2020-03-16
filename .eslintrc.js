@@ -31,5 +31,6 @@ module.exports = {
 		'indent': 'off',
 		'prefer-const': 'off',
 		'no-plusplus': 'off',
+		'react/jsx-indent': 'off',
   },
 };

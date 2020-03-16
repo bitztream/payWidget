@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import item1 from '../../helper/useSeed.js';
-
+import Widget from './components/widget.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -12,7 +12,6 @@ class App extends React.Component {
   }
 	// http://localhost:3000
   componentDidMount() {
-		console.log('here1')
 		this.get();
 	}
 
@@ -37,11 +36,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {this.state.merchandise.item.items}
-        {this.state.merchandise.item.prices}
-        {this.state.merchandise.item.imgs}
-        {this.state.merchandise.item.streamName}
+        <Widget />
+        {/* {this.state.merchandise.item.streamName}
         {this.state.merchandise.item.designerName}
+        {this.state.merchandise.item.itemNames}
+        {this.state.merchandise.item.prices}
+        {this.state.merchandise.item.imgs} */}
       </div>
     );
   }
