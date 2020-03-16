@@ -1,5 +1,5 @@
 const express = require('express');
-const seed = require('../helper/seed.js');
+// const seed = require('../helper/seed.js');
 
 const app = express();
 const port = 3000;
@@ -24,4 +24,4 @@ app.get('/getStarted', (req, res) => {
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
-console.log(seed.goSeed());
+// console.log(seed.goSeed());

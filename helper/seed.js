@@ -1,17 +1,7 @@
 const faker = require('faker');
 
-let itemNames = function () {
+let Items = () => {
 	let arr = [];
-	let start = 0;
-	while (start < 6) {
-		arr.push(faker.commerce.productName());
-		start++
-	}
-	return arr;
-};
-
-let imgs = function () {
-	let arr = []; 
 	let start = 0;
 	while (start < 6) {
 		arr.push(faker.commerce.productName());
@@ -20,8 +10,18 @@ let imgs = function () {
 	return arr;
 };
 
-let prices = function () {
-	let arr = []; 
+let Imgs = () => {
+	let arr = [];
+	let start = 0;
+	while (start < 6) {
+		arr.push(faker.commerce.productName());
+		start++;
+	}
+	return arr;
+};
+
+let Prices = () => {
+	let arr = [];
 	let start = 0;
 	while (start < 6) {
 		let num = faker.random.number(200);
@@ -37,23 +37,22 @@ let prices = function () {
 // let priceResult = prices()
 // let imgResults = imgs()
 
-const goSeed = function () {
+const goSeed = () => {
 	let seedData = [];
 	let dataLength = 100;
 	while (dataLength > 0) {
 		let streamerName = faker.internet.userName();
 		let designerName = faker.name.lastName() + ' Merch store ' + faker.hacker.noun()
-		let itemResults = itemNames()
-		let priceResults = prices()
-		let imgResults = imgs()
+		let items = Items();
+		let prices = Prices();
+		let imgs = Imgs();
 
-		seedData.push({ streamerName }, { designerName }, { itemResults }, { priceResults }, { imgResults });
+		seedData.push({
+			streamerName, designerName, items, prices, imgs,
+		});
 		dataLength--;
-		// seedData.push({ streamerID }, { streamerName }, { designerName }, { itemResults }, { priceResults }, { imgResults })
-		// dataLength--;
 	}
-	return seedData;
+	return seedData.slice();
 };
 
 module.exports.goSeed = goSeed;
-

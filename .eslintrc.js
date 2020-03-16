@@ -29,5 +29,7 @@ module.exports = {
 		'no-warning-comments': 'off',
 		'spaced-comment': 'off',
 		'indent': 'off',
+		'prefer-const': 'off',
+		'no-plusplus': 'off',
   },
 };
