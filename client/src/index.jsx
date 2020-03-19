@@ -8,9 +8,6 @@ class App extends React.Component {
    super();
      this.state = {
 					merchandise: item1,
-					pics: item1.item.imgs,
-					picDis: item1.item.itemNames,
-					prices: item1.item.prices,
      };
 		}
 
@@ -38,13 +35,13 @@ class App extends React.Component {
 	}
 
   render() {
-				const { pics, picDis, prices } = this.state;
+				const { merchandise } = this.state;
 				return (
 						<div>
 								<Widget
-								  pics={pics}
-										picDis={picDis}
-										prices={prices}
+								  pics={merchandise.item.imgs}
+										picDis={merchandise.item.itemNames}
+										prices={merchandise.item.prices}
 								/>
 						</div>
 				);

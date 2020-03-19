@@ -14,7 +14,6 @@
 	border: green solid 1px;
 	display: flex;
 	align-items: center;
-	padding: 10px;
 }
 
 .slider {
@@ -63,4 +62,12 @@
 .next {
 	transform: rotate(-45deg);
 	margin: 10px
+}
+
+img {
+	width: 250px;
+	height: 300px;
+	margin: 5px;
+	padding:5px;
+
 }
