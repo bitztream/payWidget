@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const seed = require('../helper/seed.js');
+const Promise = require('bluebird');
 
 const mongoDB = 'mongodb://localhost/widget';
 
@@ -16,7 +16,7 @@ db.once('open', () => {
 const widgetSchema = new mongoose.Schema({
 	streamerName: String,
 	designerName: String,
-	items: Array,
+	itemNames: Array,
 	prices: Array,
 	imgs: Array,
 });
@@ -36,5 +36,19 @@ const save = (document) => {
 	});
 };
 
+const select = () => {
+	Repo.find({}, (err, data) => {
+		if (err) {
+			console.log('oh no');
+			console.log(err);
+		} else {
+			let datum = data;
+			console.log(datum.slice(160, 161));
+		}
+	});
+};
 
+
+select();
+module.exports.select = select;
 module.exports.save = save;

@@ -1,0 +1,66 @@
+.display {
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+}
+
+.mover {
+	flex: 4;
+	display: flex;
+}
+
+.arrows {
+	flex:0.5;
+	border: green solid 1px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.slider {
+	display: flex;
+	flex: 4;
+	border: red 1px solid;
+	flex-direction: column;
+}
+
+.slider-itemPic {
+	flex: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider-itemName {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	margin: 10px
+}
+
+.price-container {
+	display: flex;
+	margin: 20px;
+	border: purple 1px solid;
+	flex: 1;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.arrow {
+	width: 30px;
+	height: 30px;
+	border-bottom:solid brown 10px;
+	border-right:solid brown 10px;
+}
+
+.prev {
+	transform: rotate(145deg);
+	margin: 10px
+}
+
+.next {
+	transform: rotate(-45deg);
+	margin: 10px
+}
