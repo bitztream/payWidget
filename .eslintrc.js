@@ -32,5 +32,9 @@ module.exports = {
 		'prefer-const': 'off',
 		'no-plusplus': 'off',
 		'react/jsx-indent': 'off',
+		'react/prop-types': 'off',
+		'react/jsx-indent-props': 'off',
+		'object-curly-newline': 'off',
+		'import/extensions': 'off',
   },
 };

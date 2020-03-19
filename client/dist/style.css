@@ -1,5 +1,3 @@
-
-
 .container {
 	 display: flex;
 	 height: 600px;
@@ -43,42 +41,28 @@
 	flex: 1;
 }
 
-.display {
-	flex: 5;
+.menu {
 	display: flex;
-	flex-direction: column;
+	padding: 5px;
+	justify-content: space-between;
+	align-items: flex-start;
+ font-size: 1.5rem;
 }
 
-.scrollbar {
-	display: flex;
-	flex: 4;
-	border: black 1px solid;
-	flex-direction: column;
-}
-
-.scrollbar-itemPic {
-	flex: 3;
-	border: red solid 1px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.scrollbar-itemName {
-	display: flex;
+.small-menu {
 	flex: 1;
-	justify-content: center;
-	align-items: center;
+	margin: 3px 2px;
 }
 
-.price-container {
-	display: flex;
-	margin: 20px;
-	border: purple 1px solid;
-	flex: 1;
-	justify-content: space-around;
-	align-items: center;
+.line {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
 }
+
+
+
 
 
 
