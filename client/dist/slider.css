@@ -54,13 +54,13 @@
 .med {
 	font-size: 25px;
 }
+
 .arrow {
 	flex: 1;
 	width: 30px;
 	height: 30px;
 	border-bottom: solid gold 10px;
 	border-right: solid gold 10px;
-
 }
 
 .prev {
